@@ -1,0 +1,357 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Embulk &#8212; Embulk 0.8 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Recipes" href="recipe.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="#">
+          <span>Embulk 0.8 documentation</span></a></h1>
+        <h2 class="heading"><span>Embulk</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="recipe.html">Recipes</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="embulk">
+<h1>Embulk<a class="headerlink" href="#embulk" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://github.com/embulk/embulk"><img alt="_images/embulk-logo-v2-sq-tr-small.png" src="_images/embulk-logo-v2-sq-tr-small.png" style="width: 128px;" /></a>
+<div class="section" id="highlights">
+<h2>Highlights<a class="headerlink" href="#highlights" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Embulk’s announcement mailing list (read-only) is ready. Please feel free to subscribe! Embulk core members post important updates such as <strong>key releases</strong>, <strong>compatibility information</strong>, and <strong>feedback requests to users</strong>.<ul>
+<li><a class="reference external" href="https://groups.google.com/forum/#!forum/embulk-announce">Embulk-announce</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="what-s-embulk">
+<h2>What’s Embulk?<a class="headerlink" href="#what-s-embulk" title="Permalink to this headline">¶</a></h2>
+<p>Embulk is a open-source bulk data loader that helps data transfer between various databases, storages, file formats, and cloud services.</p>
+<p>Embulk supports:</p>
+<ul class="simple">
+<li>Automatic guessing of input file formats</li>
+<li>Parallel &amp; distributed execution to deal with big data sets</li>
+<li>Transaction control to guarantee All-or-Nothing</li>
+<li>Resuming</li>
+<li>Plugins released on RubyGems.org</li>
+</ul>
+<p>You can define a bulk data loading using combination of input and output plugins:</p>
+<a class="reference external image-reference" href="https://github.com/embulk/embulk#quick-start"><img alt="_images/embulk-architecture.png" src="_images/embulk-architecture.png" style="width: 640px;" /></a>
+<p>For example, <a class="reference external" href="recipe/scheduled-csv-load-to-elasticsearch-kibana5.html">this tutorial</a> describes how to use <strong>file</strong> input plugin with <strong>csv</strong> parser plugin and <strong>gzip</strong> decoder plugin to read CSV files, and <strong>elasticsearch</strong> output plugin to load the records to Elasticsearch.</p>
+</div>
+<div class="section" id="documents">
+<h2>Documents<a class="headerlink" href="#documents" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/embulk/embulk#quick-start">Quick Start</a><ul>
+<li><a class="reference external" href="https://github.com/embulk/embulk#linux--mac--bsd">Linux</a></li>
+<li><a class="reference external" href="https://github.com/embulk/embulk#linux--mac--bsd">Mac OS X</a></li>
+<li><a class="reference external" href="https://github.com/embulk/embulk#windows">Windows</a></li>
+</ul>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recipe.html">Recipes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recipe/scheduled-csv-load-to-elasticsearch-kibana5.html">Scheduled bulk data loading to Elasticsearch + Kibana 5 from CSV files</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="http://www.embulk.org/plugins/">List of Plugins by Category</a><ul>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#input">Input plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#output">Output plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#file-parser">File parser plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#file-decoder">File decoder plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#file-formatter">File formatter plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#filter">Filter plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#file-encoder">File encoder plugins</a></li>
+<li><a class="reference external" href="http://www.embulk.org/plugins/#executor">Executor plugins</a></li>
+</ul>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="built-in.html">Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#embulk-configuration-file-format">Embulk configuration file format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#using-variables">Using variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#including-files">Including files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#local-file-input-plugin">Local file input plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#options">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#csv-parser-plugin">CSV parser plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id2">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id4">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#json-parser-plugin">JSON parser plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id5">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id8">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#gzip-decoder-plugin">Gzip decoder plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id9">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id10">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#bzip2-decoder-plugin">BZip2 decoder plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id11">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id12">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#file-output-plugin">File output plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id13">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id14">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#csv-formatter-plugin">CSV formatter plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id15">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id17">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#gzip-encoder-plugin">Gzip encoder plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id18">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id19">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#bzip2-encoder-plugin">BZip2 encoder plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id20">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id21">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#rename-filter-plugin">Rename filter plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id22">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#renaming-rules">Renaming rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#example-of-renaming-rules">Example of renaming rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#columns-not-recommended">Columns: not recommended</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#remove-columns-filter-plugin">Remove columns filter plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id30">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id31">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#local-executor-plugin">Local executor plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id32">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id33">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#guess-executor">Guess executor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id34">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id35">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="built-in.html#preview-executor">Preview executor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id36">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="built-in.html#id37">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.11.html">Release 0.9.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.10.html">Release 0.9.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.9.html">Release 0.9.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.8.html">Release 0.9.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.7.html">Release 0.9.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.6.html">Release 0.9.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.5.html">Release 0.9.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.4.html">Release 0.9.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.3.html">Release 0.9.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.2.html">Release 0.9.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.1.html">Release 0.9.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.9.0.html">Release 0.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.39.html">Release 0.8.39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.38.html">Release 0.8.38</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.37.html">Release 0.8.37</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.36.html">Release 0.8.36</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.35.html">Release 0.8.35</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.34.html">Release 0.8.34</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.33.html">Release 0.8.33</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.32.html">Release 0.8.32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.31.html">Release 0.8.31</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.30.html">Release 0.8.30</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.29.html">Release 0.8.29</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.28.html">Release 0.8.28</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.27.html">Release 0.8.27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.26.html">Release 0.8.26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.25.html">Release 0.8.25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.24.html">Release 0.8.24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.23.html">Release 0.8.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.22.html">Release 0.8.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.21.html">Release 0.8.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.20.html">Release 0.8.20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.19.html">Release 0.8.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.18.html">Release 0.8.18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.17.html">Release 0.8.17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.16.html">Release 0.8.16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.15.html">Release 0.8.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.14.html">Release 0.8.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.13.html">Release 0.8.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.12.html">Release 0.8.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.11.html">Release 0.8.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.10.html">Release 0.8.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.9.html">Release 0.8.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.8.html">Release 0.8.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.7.html">Release 0.8.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.6.html">Release 0.8.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.5.html">Release 0.8.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.4.html">Release 0.8.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.3.html">Release 0.8.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.2.html">Release 0.8.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.1.html">Release 0.8.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.8.0.html">Release 0.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.11.html">Release 0.7.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.10.html">Release 0.7.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.9.html">Release 0.7.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.8.html">Release 0.7.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.7.html">Release 0.7.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.6.html">Release 0.7.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.5.html">Release 0.7.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.4.html">Release 0.7.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.3.html">Release 0.7.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.2.html">Release 0.7.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.1.html">Release 0.7.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.7.0.html">Release 0.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.27.html">Release 0.6.27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.26.html">Release 0.6.26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.25.html">Release 0.6.25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.24.html">Release 0.6.24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.23.html">Release 0.6.23</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.22.html">Release 0.6.22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.21.html">Release 0.6.21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.20.html">Release 0.6.20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.19.html">Release 0.6.19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.18.html">Release 0.6.18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.17.html">Release 0.6.17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.16.html">Release 0.6.16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.15.html">Release 0.6.15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.14.html">Release 0.6.14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.13.html">Release 0.6.13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.12.html">Release 0.6.12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.11.html">Release 0.6.11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.10.html">Release 0.6.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.9.html">Release 0.6.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.8.html">Release 0.6.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.7.html">Release 0.6.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.6.html">Release 0.6.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.5.html">Release 0.6.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.4.html">Release 0.6.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.3.html">Release 0.6.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.2.html">Release 0.6.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.1.html">Release 0.6.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.6.0.html">Release 0.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.5.html">Release 0.5.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.4.html">Release 0.5.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.3.html">Release 0.5.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.2.html">Release 0.5.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.1.html">Release 0.5.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.5.0.html">Release 0.5.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.10.html">Release 0.4.10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.9.html">Release 0.4.9</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.8.html">Release 0.4.8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.7.html">Release 0.4.7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.6.html">Release 0.4.6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.5.html">Release 0.4.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.4.html">Release 0.4.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.3.html">Release 0.4.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.2.html">Release 0.4.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.1.html">Release 0.4.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.4.0.html">Release 0.4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.3.2.html">Release 0.3.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.3.1.html">Release 0.3.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.3.0.html">Release 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.2.1.html">Release 0.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.2.0.html">Release 0.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release/release-0.1.0.html">Release 0.1.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logo.html">Logo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logo.html#square">Square</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logo.html#horizontal">Horizontal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logo.html#icon">Icon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logo.html#links">Links</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="for-developers">
+<h2>For developers<a class="headerlink" href="#for-developers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/embulk/embulk">Github</a></li>
+<li><a class="reference external" href="javadoc/index.html">JavaDoc</a></li>
+<li><a class="reference external" href="rdoc/_index.html">RDoc</a></li>
+<li><a class="reference external" href="developers/index.html">Other resources for developers</a></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="customization.html">Customization</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="customization.html#creating-plugins">Creating plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#step-1-creating-a-new-project">Step 1: Creating a new project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#step-2-building-the-project">Step 2: Building the project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#step-3-confirm-it-works">Step 3: Confirm it works</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#step-4-modifying-the-code">Step 4: Modifying the code</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="customization.html#releasing-plugins">Releasing plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#checking-plugin-description">Checking plugin description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#creating-account-on-rubygems-org">Creating account on RubyGems.org</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#releasing-the-plugin-to-rubygems-org">Releasing the plugin to RubyGems.org</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#installing-your-plugin">Installing your plugin</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="recipe.html">Recipes</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Embulk Project.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.2.
+    </div>
+  </body>
+</html>
