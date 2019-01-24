@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Release 0.8.19 &#8212; Embulk 0.8 documentation</title>
+    <title>&lt;no title&gt; &#8212; Embulk 0.8 documentation</title>
     <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,70 +15,30 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Release 0.8.18" href="release-0.8.18.html" />
-    <link rel="prev" title="Release 0.8.20" href="release-0.8.20.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
   </head><body>
       <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
           <span>Embulk 0.8 documentation</span></a></h1>
-        <h2 class="heading"><span>Release 0.8.19</span></h2>
+        <h2 class="heading"><span>&lt;no title&gt;</span></h2>
       </div>
       <div class="topnav" role="navigation" aria-label="top navigation">
       
         <p>
-        «&#160;&#160;<a href="release-0.8.20.html">Release 0.8.20</a>
-        &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="release-0.8.18.html">Release 0.8.18</a>&#160;&#160;»
         </p>
 
       </div>
       <div class="content">
         
         
-  <div class="section" id="release-0-8-19">
-<h1>Release 0.8.19<a class="headerlink" href="#release-0-8-19" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="general-changes">
-<h2>General Changes<a class="headerlink" href="#general-changes" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Fixed LocalFileInputPlugin to follow link if path prefix is symlink. (&#64;hiroyuki-sato) [#585]</li>
-<li>Fixed CsvParserPlugin to refresh the number of skipped header lines for each file. [#567]</li>
-<li>Fixed embulk/guess/csv.rb to finish immidiately if CSV parser could not parse sample_lines. [#556]</li>
-<li>Fixed PageBuilder to avoid saving unexpected string values saving to stringReferences. [#598]</li>
-<li>Fixed PreviewExecutor to avoid to call SamplingPageOutput#finish twice. [#571]</li>
-<li>Fixed TempFileSpace to change temporary filename format for Windows safe. (&#64;hiroyuki-sato) [#589]</li>
-<li>Added ‘preview_sample_buffer_bytes’ option for ‘preview’ command to make sampling buffer bytes configurable. [#572]</li>
-<li>Added ‘guess_sample_buffer_bytes’ option for ‘guess’ command to make sampling buffer bytes configurable. [#594]</li>
-<li>Updated snakeyaml from 1.14 to 1.18. (&#64;hiroyuki-sato) [#575]</li>
-<li>Updated liquid from 3.0.6 to 4.0.0. (&#64;hiroyuki-sato)  [#587]</li>
-<li>Minor fix:<ul>
-<li>Removed lib/embulk/command/embulk_generate_bin.rb that is not called anywhere. [#578]</li>
-<li>Deprecated lib/embulk/version.rb ‘Embulk::VERSION’, and used the jar manifest (META-INF/MANIFEST.MF) to provide the Embulk version at runtime [#596, #597]</li>
-<li>Rewrote the “example” subcommand in Java. [#558]</li>
-<li>Rewrote the “selfupdate” subcommand in Java. [#563]</li>
-<li>Rewrote the “migrate” subcommand in Java. [#568]</li>
-<li>Rewrote the “new” subcommand in Java. [#569]</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="release-date">
-<h2>Release Date<a class="headerlink" href="#release-date" title="Permalink to this headline">¶</a></h2>
-<p>2017-05-12</p>
-</div>
-</div>
+  <p>Find the release note at: <cite>GitHub Releases &lt;https://github.com/embulk/embulk/releases/v0.8.19&gt;</cite></p>
 
 
       </div>
       <div class="bottomnav" role="navigation" aria-label="bottom navigation">
       
         <p>
-        «&#160;&#160;<a href="release-0.8.20.html">Release 0.8.20</a>
-        &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="release-0.8.18.html">Release 0.8.18</a>&#160;&#160;»
         </p>
 
       </div>

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Release 0.6.15 &#8212; Embulk 0.8 documentation</title>
+    <title>&lt;no title&gt; &#8212; Embulk 0.8 documentation</title>
     <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,66 +15,30 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Release 0.6.14" href="release-0.6.14.html" />
-    <link rel="prev" title="Release 0.6.16" href="release-0.6.16.html" /> 
+    <link rel="search" title="Search" href="../search.html" /> 
   </head><body>
       <div class="header" role="banner"><h1 class="heading"><a href="../index.html">
           <span>Embulk 0.8 documentation</span></a></h1>
-        <h2 class="heading"><span>Release 0.6.15</span></h2>
+        <h2 class="heading"><span>&lt;no title&gt;</span></h2>
       </div>
       <div class="topnav" role="navigation" aria-label="top navigation">
       
         <p>
-        «&#160;&#160;<a href="release-0.6.16.html">Release 0.6.16</a>
-        &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="release-0.6.14.html">Release 0.6.14</a>&#160;&#160;»
         </p>
 
       </div>
       <div class="content">
         
         
-  <div class="section" id="release-0-6-15">
-<h1>Release 0.6.15<a class="headerlink" href="#release-0-6-15" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="plugin-api">
-<h2>Plugin API<a class="headerlink" href="#plugin-api" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>PageBuilder sets null to a column if setXxx method is not called to the column.</li>
-</ul>
-</div>
-<div class="section" id="built-in-plugins">
-<h2>Built-in plugins<a class="headerlink" href="#built-in-plugins" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><strong>IMPORTANT</strong>: Because of default value of <code class="docutils literal notranslate"><span class="pre">sequence_format</span></code> option, <code class="docutils literal notranslate"><span class="pre">formatter-csv</span></code> adds <code class="docutils literal notranslate"><span class="pre">.</span></code> (dot) before <code class="docutils literal notranslate"><span class="pre">file_ext</span></code> rather than after <code class="docutils literal notranslate"><span class="pre">path_prefix</span></code>. If you’re using <code class="docutils literal notranslate"><span class="pre">out:</span> <span class="pre">type:</span> <span class="pre">file</span></code>, see the document of file output plugin at <a class="reference internal" href="../built-in.html"><span class="doc">Configuration</span></a>.</li>
-</ul>
-</div>
-<div class="section" id="general-changes">
-<h2>General Changes<a class="headerlink" href="#general-changes" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">preview</span></code> reads next file (task) when the first file (task) is empty.</li>
-<li>Fixed serialize/deserialization bug of ColumnConfig.</li>
-<li>Fixed NullPointerException caused when <code class="docutils literal notranslate"><span class="pre">PageBuilder#setRubyObject(IRubyObject)</span></code> is called with <code class="docutils literal notranslate"><span class="pre">nil</span></code>.</li>
-</ul>
-</div>
-<div class="section" id="release-date">
-<h2>Release Date<a class="headerlink" href="#release-date" title="Permalink to this headline">¶</a></h2>
-<p>2015-06-29</p>
-</div>
-</div>
+  <p>Find the release note at: <cite>GitHub Releases &lt;https://github.com/embulk/embulk/releases/v0.6.15&gt;</cite></p>
 
 
       </div>
       <div class="bottomnav" role="navigation" aria-label="bottom navigation">
       
         <p>
-        «&#160;&#160;<a href="release-0.6.16.html">Release 0.6.16</a>
-        &#160;&#160;::&#160;&#160;
         <a class="uplink" href="../index.html">Contents</a>
-        &#160;&#160;::&#160;&#160;
-        <a href="release-0.6.14.html">Release 0.6.14</a>&#160;&#160;»
         </p>
 
       </div>
