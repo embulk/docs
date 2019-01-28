@@ -291,11 +291,13 @@ generation.</p>
 commit to bump Embulk version up.</p>
 
 <pre class="code ruby"><code class="ruby">git checkout --detach master
-(Edit build.gradle)
-git commit -a
+(Remove &quot;-SNAPSHOT&quot; in &quot;version&quot; in build.gradle.)
+git add build.gradle
+git commit -m &quot;Release vX.Y.Z&quot;
+git tag -a vX.Y.Z
+(Write the release note for vX.Y.Z in the tag annotation.)
 ./gradlew clean &amp;&amp; ./gradlew release
-git tag &lt;VERSION&gt;
-git push -u origin &lt;VERSION&gt;</code></pre>
+git push -u origin vX.Y.Z</code></pre>
 
 <p>See also: * <a href="https://bintray.com">Bintray</a> * <a
 href="https://bintray.com/docs/usermanual/interacting/interacting_editingyouruserprofile.html#anchorAPIKEY">How
@@ -303,7 +305,7 @@ to acquire bintray API Keys</a></p>
 </div></div>
 
       <div id="footer">
-  Generated on Fri Jan 25 09:14:47 2019 by
+  Generated on Mon Jan 28 01:22:17 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.12 (ruby-2.3.3).
 </div>
