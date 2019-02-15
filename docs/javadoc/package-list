@@ -3,6 +3,8 @@ org.embulk.cli
 org.embulk.cli.parse
 org.embulk.command
 org.embulk.config
+org.embulk.deps
+org.embulk.deps.maven
 org.embulk.exec
 org.embulk.jruby
 org.embulk.plugin
