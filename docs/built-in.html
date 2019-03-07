@@ -589,8 +589,8 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 <colgroup>
 <col width="16%" />
 <col width="6%" />
-<col width="62%" />
-<col width="17%" />
+<col width="63%" />
+<col width="16%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">name</th>
@@ -609,6 +609,21 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 <td>enum</td>
 <td>Escape strategy of invalid json string such as using invalid <code class="docutils literal notranslate"><span class="pre">\</span></code> like <code class="docutils literal notranslate"><span class="pre">\a</span></code>. (PASSTHROUGH, SKIP, UNESCAPE)</td>
 <td><code class="docutils literal notranslate"><span class="pre">PASSTHROUGH</span></code> by default</td>
+</tr>
+<tr class="row-even"><td>root</td>
+<td>string</td>
+<td>Specify when pointing a JSON object value as a record via JSON pointer expression</td>
+<td>optional</td>
+</tr>
+<tr class="row-odd"><td>flatten_json_array</td>
+<td>boolean</td>
+<td>Set true when regard elements in a JSON array as multiple Embulk records.</td>
+<td><code class="docutils literal notranslate"><span class="pre">false</span></code> by default</td>
+</tr>
+<tr class="row-even"><td>columns</td>
+<td>hash</td>
+<td>Columns (see below)</td>
+<td>optional</td>
 </tr>
 </tbody>
 </table>
@@ -636,12 +651,42 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 </tbody>
 </table>
 <p>(*1): Throwing an exception.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">columns</span></code> option declares the list of columns, and the way how to extract JSON values into Embulk columns.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">name</th>
+<th class="head">description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>name</td>
+<td>Name of the column. The JSON value with this name is extracted if <cite>pointer</cite> is not specified.</td>
+</tr>
+<tr class="row-odd"><td>type</td>
+<td>Type of the column (same as CSV parser’s one)</td>
+</tr>
+<tr class="row-even"><td>pointer</td>
+<td>Pointer to the descendant node to be extracted as the column, expressed as a JSON Pointer (optional).</td>
+</tr>
+<tr class="row-odd"><td>format</td>
+<td>Format of the timestamp if type is timestamp</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id8">
 <h3><a class="toc-backref" href="#id49">Example</a><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">in</span><span class="p">:</span>
   <span class="nt">parser</span><span class="p">:</span>
     <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">json</span>
+    <span class="nt">columns</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">time</span><span class="p p-Indicator">,</span><span class="nt"> type</span><span class="p">:</span> <span class="nv">timestamp</span><span class="p p-Indicator">,</span><span class="nt"> format</span><span class="p">:</span> <span class="s">&quot;%s&quot;</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">ip</span><span class="p p-Indicator">,</span><span class="nt"> type</span><span class="p">:</span> <span class="nv">string</span><span class="p p-Indicator">}</span>
+    <span class="p p-Indicator">-</span> <span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span> <span class="nv">name</span><span class="p p-Indicator">,</span><span class="nt"> type</span><span class="p">:</span> <span class="nv">string</span><span class="p p-Indicator">}</span>
 </pre></div>
 </div>
 </div>
