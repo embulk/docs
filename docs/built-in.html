@@ -654,8 +654,8 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 <p>The <code class="docutils literal notranslate"><span class="pre">columns</span></code> option declares the list of columns, and the way how to extract JSON values into Embulk columns.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="9%" />
-<col width="91%" />
+<col width="12%" />
+<col width="88%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">name</th>
@@ -664,13 +664,13 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>name</td>
-<td>Name of the column. The JSON value with this name is extracted if <cite>pointer</cite> is not specified.</td>
+<td>Name of the column. The JSON value with this name is extracted if <cite>element_at</cite> is not specified.</td>
 </tr>
 <tr class="row-odd"><td>type</td>
 <td>Type of the column (same as CSV parser’s one)</td>
 </tr>
-<tr class="row-even"><td>pointer</td>
-<td>Pointer to the descendant node to be extracted as the column, expressed as a JSON Pointer (optional).</td>
+<tr class="row-even"><td>element_at</td>
+<td>Descendant element to be extracted as the column, expressed as a relative JSON Pointer (optional).</td>
 </tr>
 <tr class="row-odd"><td>format</td>
 <td>Format of the timestamp if type is timestamp</td>
@@ -1605,7 +1605,7 @@ For example, if you set <code class="docutils literal notranslate"><span class="
 
     <div class="footer" role="contentinfo">
         &#169; Copyright 2015, Embulk Project.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.
     </div>
   </body>
 </html>
