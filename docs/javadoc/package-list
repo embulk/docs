@@ -5,6 +5,7 @@ org.embulk.config
 org.embulk.deps
 org.embulk.deps.buffer
 org.embulk.deps.cli
+org.embulk.deps.config
 org.embulk.deps.guess
 org.embulk.deps.maven
 org.embulk.exec
