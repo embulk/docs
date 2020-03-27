@@ -936,7 +936,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/ExecModule.html" title="class in org.embulk.exec"><span class="typeNameLink">ExecModule</span></a> - Class in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/ExecModule.html#ExecModule-org.embulk.config.ConfigSource-">ExecModule(ConfigSource)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExecModule.html" title="class in org.embulk.exec">ExecModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/ExecModule.html#ExecModule-org.embulk.EmbulkSystemProperties-">ExecModule(EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExecModule.html" title="class in org.embulk.exec">ExecModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/spi/ExecSession.html" title="class in org.embulk.spi"><span class="typeNameLink">ExecSession</span></a> - Class in <a href="org/embulk/spi/package-summary.html">org.embulk.spi</a></dt>
 <dd>&nbsp;</dd>
@@ -981,9 +981,9 @@
 <div class="block">ExtensionServiceLoaderModule loads Extensions using java.util.ServiceLoader
  mechanism.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/ExtensionServiceLoaderModule.html#ExtensionServiceLoaderModule-org.embulk.config.ConfigSource-">ExtensionServiceLoaderModule(ConfigSource)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExtensionServiceLoaderModule.html" title="class in org.embulk.exec">ExtensionServiceLoaderModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/ExtensionServiceLoaderModule.html#ExtensionServiceLoaderModule-org.embulk.EmbulkSystemProperties-">ExtensionServiceLoaderModule(EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExtensionServiceLoaderModule.html" title="class in org.embulk.exec">ExtensionServiceLoaderModule</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/ExtensionServiceLoaderModule.html#ExtensionServiceLoaderModule-java.lang.ClassLoader-org.embulk.config.ConfigSource-">ExtensionServiceLoaderModule(ClassLoader, ConfigSource)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExtensionServiceLoaderModule.html" title="class in org.embulk.exec">ExtensionServiceLoaderModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/ExtensionServiceLoaderModule.html#ExtensionServiceLoaderModule-java.lang.ClassLoader-org.embulk.EmbulkSystemProperties-">ExtensionServiceLoaderModule(ClassLoader, EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/ExtensionServiceLoaderModule.html" title="class in org.embulk.exec">ExtensionServiceLoaderModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/cli/EmbulkArguments.html#extract-java.util.List-">extract(List&lt;String&gt;)</a></span> - Static method in class org.embulk.cli.<a href="org/embulk/cli/EmbulkArguments.html" title="class in org.embulk.cli">EmbulkArguments</a></dt>
 <dd>&nbsp;</dd>
@@ -1092,7 +1092,9 @@
 <dt><span class="memberNameLink"><a href="org/embulk/spi/ExecSession.html#forPreview--">forPreview()</a></span> - Method in class org.embulk.spi.<a href="org/embulk/spi/ExecSession.html" title="class in org.embulk.spi">ExecSession</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/ForSystemConfig.html" title="annotation in org.embulk.exec"><span class="typeNameLink">ForSystemConfig</span></a> - Annotation Type in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span></div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/spi/ExecSession.Builder.html#fromExecConfig-org.embulk.config.ConfigSource-">fromExecConfig(ConfigSource)</a></span> - Method in class org.embulk.spi.<a href="org/embulk/spi/ExecSession.Builder.html" title="class in org.embulk.spi">ExecSession.Builder</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/config/ConfigLoader.html#fromJson-java.io.InputStream-">fromJson(InputStream)</a></span> - Method in class org.embulk.config.<a href="org/embulk/config/ConfigLoader.html" title="class in org.embulk.config">ConfigLoader</a></dt>
@@ -1471,7 +1473,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/spi/ExecSession.html#getModelManager--">getModelManager()</a></span> - Method in class org.embulk.spi.<a href="org/embulk/spi/ExecSession.html" title="class in org.embulk.spi">ExecSession</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/spi/Extension.html#getModules-org.embulk.config.ConfigSource-">getModules(ConfigSource)</a></span> - Method in interface org.embulk.spi.<a href="org/embulk/spi/Extension.html" title="interface in org.embulk.spi">Extension</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/spi/Extension.html#getModules-org.embulk.EmbulkSystemProperties-">getModules(EmbulkSystemProperties)</a></span> - Method in interface org.embulk.spi.<a href="org/embulk/spi/Extension.html" title="interface in org.embulk.spi">Extension</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/deps/DependencyCategory.html#getName--">getName()</a></span> - Method in enum org.embulk.deps.<a href="org/embulk/deps/DependencyCategory.html" title="enum in org.embulk.deps">DependencyCategory</a></dt>
 <dd>&nbsp;</dd>
@@ -1598,6 +1600,10 @@
 <dt><span class="memberNameLink"><a href="org/embulk/spi/util/Filters.html#getPluginTypes-java.util.List-">getPluginTypes(List&lt;ConfigSource&gt;)</a></span> - Static method in class org.embulk.spi.util.<a href="org/embulk/spi/util/Filters.html" title="class in org.embulk.spi.util">Filters</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/exec/PreviewedNoticeError.html#getPreviewResult--">getPreviewResult()</a></span> - Method in error org.embulk.exec.<a href="org/embulk/exec/PreviewedNoticeError.html" title="class in org.embulk.exec">PreviewedNoticeError</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/embulk/EmbulkSystemProperties.html#getPropertyAsBoolean-java.lang.String-boolean-">getPropertyAsBoolean(String, boolean)</a></span> - Method in class org.embulk.<a href="org/embulk/EmbulkSystemProperties.html" title="class in org.embulk">EmbulkSystemProperties</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="org/embulk/EmbulkSystemProperties.html#getPropertyAsInteger-java.lang.String-int-">getPropertyAsInteger(String, int)</a></span> - Method in class org.embulk.<a href="org/embulk/EmbulkSystemProperties.html" title="class in org.embulk">EmbulkSystemProperties</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/spi/PageReader.html#getRecordCount-org.embulk.spi.Page-">getRecordCount(Page)</a></span> - Static method in class org.embulk.spi.<a href="org/embulk/spi/PageReader.html" title="class in org.embulk.spi">PageReader</a></dt>
 <dd>&nbsp;</dd>
@@ -1769,7 +1775,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/GuessExecutor.html" title="class in org.embulk.exec"><span class="typeNameLink">GuessExecutor</span></a> - Class in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/GuessExecutor.html#GuessExecutor-org.embulk.config.ConfigSource-java.util.Set-">GuessExecutor(ConfigSource, Set&lt;PluginType&gt;)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/GuessExecutor.html" title="class in org.embulk.exec">GuessExecutor</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/GuessExecutor.html#GuessExecutor-org.embulk.EmbulkSystemProperties-java.util.Set-">GuessExecutor(EmbulkSystemProperties, Set&lt;PluginType&gt;)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/GuessExecutor.html" title="class in org.embulk.exec">GuessExecutor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/GuessExecutor.GuessedNoticeError.html" title="class in org.embulk.exec"><span class="typeNameLink">GuessExecutor.GuessedNoticeError</span></a> - Error in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
@@ -1985,7 +1991,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/jruby/JRubyScriptingModule.html" title="class in org.embulk.jruby"><span class="typeNameLink">JRubyScriptingModule</span></a> - Class in <a href="org/embulk/jruby/package-summary.html">org.embulk.jruby</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/jruby/JRubyScriptingModule.html#JRubyScriptingModule-org.embulk.config.ConfigSource-">JRubyScriptingModule(ConfigSource)</a></span> - Constructor for class org.embulk.jruby.<a href="org/embulk/jruby/JRubyScriptingModule.html" title="class in org.embulk.jruby">JRubyScriptingModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/jruby/JRubyScriptingModule.html#JRubyScriptingModule--">JRubyScriptingModule()</a></span> - Constructor for class org.embulk.jruby.<a href="org/embulk/jruby/JRubyScriptingModule.html" title="class in org.embulk.jruby">JRubyScriptingModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="org/embulk/spi/type/Types.html#JSON">JSON</a></span> - Static variable in class org.embulk.spi.type.<a href="org/embulk/spi/type/Types.html" title="class in org.embulk.spi.type">Types</a></dt>
 <dd>&nbsp;</dd>
@@ -2087,7 +2093,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/LocalExecutorPlugin.html" title="class in org.embulk.exec"><span class="typeNameLink">LocalExecutorPlugin</span></a> - Class in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/LocalExecutorPlugin.html#LocalExecutorPlugin-org.embulk.config.ConfigSource-">LocalExecutorPlugin(ConfigSource)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/LocalExecutorPlugin.html" title="class in org.embulk.exec">LocalExecutorPlugin</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/LocalExecutorPlugin.html#LocalExecutorPlugin-org.embulk.EmbulkSystemProperties-">LocalExecutorPlugin(EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/LocalExecutorPlugin.html" title="class in org.embulk.exec">LocalExecutorPlugin</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/LocalExecutorPlugin.DirectExecutor.html" title="class in org.embulk.exec"><span class="typeNameLink">LocalExecutorPlugin.DirectExecutor</span></a> - Class in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
@@ -2147,11 +2153,11 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/plugin/maven/MavenPluginSource.html" title="class in org.embulk.plugin.maven"><span class="typeNameLink">MavenPluginSource</span></a> - Class in <a href="org/embulk/plugin/maven/package-summary.html">org.embulk.plugin.maven</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/plugin/maven/MavenPluginSource.html#MavenPluginSource-com.google.inject.Injector-org.embulk.config.ConfigSource-">MavenPluginSource(Injector, ConfigSource)</a></span> - Constructor for class org.embulk.plugin.maven.<a href="org/embulk/plugin/maven/MavenPluginSource.html" title="class in org.embulk.plugin.maven">MavenPluginSource</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/plugin/maven/MavenPluginSource.html#MavenPluginSource-com.google.inject.Injector-org.embulk.EmbulkSystemProperties-">MavenPluginSource(Injector, EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.plugin.maven.<a href="org/embulk/plugin/maven/MavenPluginSource.html" title="class in org.embulk.plugin.maven">MavenPluginSource</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/plugin/maven/MavenPluginSourceModule.html" title="class in org.embulk.plugin.maven"><span class="typeNameLink">MavenPluginSourceModule</span></a> - Class in <a href="org/embulk/plugin/maven/package-summary.html">org.embulk.plugin.maven</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/plugin/maven/MavenPluginSourceModule.html#MavenPluginSourceModule-org.embulk.config.ConfigSource-">MavenPluginSourceModule(ConfigSource)</a></span> - Constructor for class org.embulk.plugin.maven.<a href="org/embulk/plugin/maven/MavenPluginSourceModule.html" title="class in org.embulk.plugin.maven">MavenPluginSourceModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/plugin/maven/MavenPluginSourceModule.html#MavenPluginSourceModule--">MavenPluginSourceModule()</a></span> - Constructor for class org.embulk.plugin.maven.<a href="org/embulk/plugin/maven/MavenPluginSourceModule.html" title="class in org.embulk.plugin.maven">MavenPluginSourceModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/plugin/MavenPluginType.html" title="class in org.embulk.plugin"><span class="typeNameLink">MavenPluginType</span></a> - Class in <a href="org/embulk/plugin/package-summary.html">org.embulk.plugin</a></dt>
 <dd>&nbsp;</dd>
@@ -3377,7 +3383,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="org/embulk/exec/SystemConfigModule.html" title="class in org.embulk.exec"><span class="typeNameLink">SystemConfigModule</span></a> - Class in <a href="org/embulk/exec/package-summary.html">org.embulk.exec</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="org/embulk/exec/SystemConfigModule.html#SystemConfigModule-org.embulk.config.ConfigSource-">SystemConfigModule(ConfigSource)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/SystemConfigModule.html" title="class in org.embulk.exec">SystemConfigModule</a></dt>
+<dt><span class="memberNameLink"><a href="org/embulk/exec/SystemConfigModule.html#SystemConfigModule-org.embulk.config.ConfigSource-org.embulk.EmbulkSystemProperties-">SystemConfigModule(ConfigSource, EmbulkSystemProperties)</a></span> - Constructor for class org.embulk.exec.<a href="org/embulk/exec/SystemConfigModule.html" title="class in org.embulk.exec">SystemConfigModule</a></dt>
 <dd>&nbsp;</dd>
 </dl>
 <a name="I:T">
